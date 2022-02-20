@@ -5,23 +5,26 @@
 font-family: 'Lato', sans-serif;
 font-family: 'Oswald', sans-serif;
 }
-body{
-    overflow-x: hidden;
-}
+
 .header{
     
     background-image:url(assets/background.png);
     background-size: cover;
-    width: 100%;
+    margin: 0;
+    display: flex;
     height: 100vh;
     position: relative;
+    overflow: hidden;
     
 }
-nav ul li{
-    color: white;
+.header nav img{
+    width: 100%;
+    margin-top: 30px;
+    height: 12%;
+    margin-left: 60px;
     
+}
 
-}
 .btn{
     margin-top: 20px;
     margin-left: 85%;
@@ -55,6 +58,15 @@ nav ul li{
     font-size: 18px;
     color: white;
 }
+.text-box .ctre{
+    width: 30%;
+    height: 30%;
+}
+.text-box div img{
+    width: 100vw;
+    height: 50%;
+    overflow: hidden;
+}
 
 .hero-btn{
     display: inline-block;
@@ -70,6 +82,33 @@ nav ul li{
     border-radius: 50px;
 }
 
+/* Create event page */
+
+
+.create-col{
+    
+    background-color: transparent;
+    margin:300px;
+    align-items: center;
+    
+}
+.create-col h1{
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+}
+.create-col input{
+    width: 50%;
+    padding: 20px;
+    margin:20px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: #fff;
+    
+}
+
 /* event page */
 .event{
     background-image: url(assets/cover.png);
@@ -80,64 +119,100 @@ nav ul li{
 .content{
     margin-left: 20%;
     margin-top: 30px;
+    display: flex;
+}
+.content .cleb{
+    width: 4%;
+    height: 20%;
+    margin-top: 30px;
+    margin-right: 10px;
+    
 }
 .content h1{
-    font-size: 40px;
+    font-size: 70px;
     font-weight: bolder;
     color: rgb(40, 5, 138);
 }
 .content p{
     color: gray;
 }
-.dec{
+.middle{
     display: flex;
-    border: #fff;
-    border-radius: 70%;
+    margin-left: 20px;
     
-    padding: 2px;
-    width: 5vw;
-    max-height: 20vh;
 }
-.dec img{
-    cursor: pointer;
+.invite-col{
+    display: inline;
+    width: 100%;   
+}
+.invite-col .sett{
+    margin-top: 20px;
+    margin-left: 200px;
 }
 
 
-
-.invi{
+.dec-col{
+    display: inline;
+    width: 100%;
+    margin: auto;   
+    
+}
+.time{
+    margin-left: 15%;
+    margin-top: 50px;
     display: flex;
-    justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 200px;
 }
+.time img{
+    height: 20px;
+    margin-right: 20px;
+}
+
+
 .time h2{
     color: blue;
-    margin-top: 70px;
-    margin-left: 50px;
+    
+    
     font-weight: bolder;
 
 }
 .time p{
-    margin-left: 50px;
+    
     color: gray;
 
 }
+.loc{
+    margin-left: 15%;
+    margin-top: 20px;
+    display: flex;
+
+}
+.loc img{
+    height: 20px;
+    margin-right: 20px;
+}
+
 .loc h2{
     color: blue;
-    margin-top: 20px;
-    margin-left: 50px;
+    
     font-weight: bolder;
 
 }
 .loc p{
-    margin-left: 50px;
+    
     color: gray;
 
 }
-.buttons{
-    margin-top: 20px;
-    margin-left: 50px;
+.last{
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.last-col{
     
+    display: inline;
+    width: 50%;
+}
+.last-col img{
+    margin-left: 160px;
 }
 .dbtn{
     margin-top: 20px;
@@ -156,7 +231,58 @@ nav ul li{
 }
 .footer{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: gray;
+
+}
+@media(max-width:700px){
+    .last{
+        flex-direction: row;
+        display: flex;
+        width: 100%;
+        height: 60%;
+        margin-left: 10px;
+    }
+    .middle{
+        flex-direction: row;
+        display: flex;
+    }
+    .create-col input{
+        margin-left: 0;
+        width: 1005;
+    }
+    .header nav img{
+        width: 90%;
+    }
+    .header{
+        width: 100%;
+    }
+    .text-box div img{
+        width: 90%;
+    }
+    .invite-col img{
+        width: 45%;
+        height: 20.5%;
+        flex-direction: row;
+    }
+    .last-col img{
+        width: 30%;
+        padding: 30px;
+        height: 13%;
+        flex-direction: row;
+
+    }
+    .invite-col .sett{
+        width: 20%;
+        margin-right: 0%;
+    }
+    .dec-col img{
+        width: 18%;
+        padding: 30px;
+        height: 15%;
+        flex-direction: row;
+    }
 
 }
 
